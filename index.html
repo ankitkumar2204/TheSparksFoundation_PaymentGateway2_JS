@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sparks Donation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="logo1.png">
+</head>
+
+<body onload="section1()">
+    <div class="section">
+        <div class="section1">
+            <a href="index.html"><img src="donation1.jpg" id="donation1">
+            </a>
+        </div>
+        <div class="section2">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="my_logo.png">
+                </div>
+            </div>
+
+            <div class="container">
+                <h2>Be the change the world needs by helping others.</h2>
+                <h2><span>DONATE NOW.</span></h2>
+                <h2><a href="donation.html"><button type="button">Please Donate</button></a></h2>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        var donation1 = document.getElementById("donation1")
+        var image = new Array(
+            "donation1.jpg",
+            "donation2.jpg",
+            "donation3.jpeg",
+            "donation4.jpeg"
+        );
+        var len = image.length;
+        var i = 0;
+        function section1() {
+            if (i > len - 1) {
+                i = 0;
+            }
+            donation1.src = image[i];
+            i++;
+            setTimeout('section1()', 3000);
+
+        }
+    </script>
+
+</body>
+
+</html>
